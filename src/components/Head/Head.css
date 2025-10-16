@@ -1,0 +1,59 @@
+.head {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.head__input {
+  max-width: 500px;
+  padding: 15px;
+  background: none;
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+
+.head__input:hover {
+  border: 2px solid black;
+}
+
+.head__button {
+  border: none;
+  font-size: 30px;
+  border-radius: 10px;
+  max-width: 150px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: green;
+  color: white;
+}
+
+.filter {
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.head__item {
+  max-width: 400px;
+  padding: 10px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.head__delete {
+  background: none;
+  border: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.head__delete:hover {
+  transform: scale(1.2);
+}
