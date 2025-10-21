@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addName, removeName, setFilter } from "../../redux/actions";
+import { addName, removeName, setFilter } from "../../redux/reducer";
 
-import "./Head.css"
+import "./Head.css";
 
 const Head = () => {
   const [nameInput, setNameInput] = useState("");
@@ -34,7 +34,7 @@ const Head = () => {
   return (
     <div className="head">
       <input
-      className="head__input"
+        className="head__input"
         value={nameInput}
         onChange={(e) => setNameInput(e.target.value)}
         placeholder="Введіть ім'я"
@@ -49,7 +49,7 @@ const Head = () => {
 
       <br />
       <input
-       className="head__input filter"
+        className="head__input filter"
         value={namesState.filter}
         onChange={handleFilterChange}
         placeholder="Фільтр"
